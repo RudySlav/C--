@@ -35,6 +35,7 @@ int main(){
     //String (Object That Represents A Sequence Of Text)
     std::string name = "Krzysztof";
     std::string day = "Friday";
+    std::string burger = "Ham";
     std::string food = "Pizza";
     std::string address = "123 Fake St.";
 

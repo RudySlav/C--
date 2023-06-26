@@ -1,0 +1,41 @@
+# Compiler Errors:
+Syntax Error - Something wrong with the structure
+    std::cout << "Error << std::endl;
+    return 0
+
+Semantic Errors - Something wrong with the meaning
+    a + b; When it doesn't make sense to add a and b
+
+# Compiler Warnings:
+Compiler has recognised an issue with your code that could lead to a potential problem.
+It's only a warning because the compiler is still able to generate correct machine code.
+    int miles_driven;
+        std::cout << miles_driven;
+Warning: 'miles_driven' is used unitialized
+
+# Linker Errors:
+The linker is having trouble linking all the object files together to create an executable.
+Usually there is a library or object file that is missing.
+
+    int x;
+    int main(){
+        std::cout << x;
+    }
+Underfined reference to x
+
+# Runtime Errors
+Errors that occur when the program is ececuting.
+Some typical runtime Errors:
+    Divide by zero
+    File not found
+    Out of memory
+Can cause your program to crash.
+Exception Handling can help deal with run time Errors.
+
+# Logical Errors:
+Errors or bugs in your code that cause your program to run icorrectly.
+Logic errors are mistakes made by the programmer.
+Suppose we have a program that determines if a person can vote in an election and you must be 18 years or older to vote.
+    if (age < 18){
+        std::cout << "Yes, you can vote!";
+    }

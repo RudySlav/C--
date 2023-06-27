@@ -1,0 +1,71 @@
+# Preprocessor Directives
+Preprocessor is a program that process the source code before the compiler sees it.
+Directives start with '#'
+Commands tot the Preprocessor
+e.g
+    #include <iostream>
+    #include "myfile.h"
+
+# The main() Function
+Every C++ program must have exactly 1 main() Function
+Starting point of program execution
+Return 0 indicates successful programm execution
+2 Versions that are both valid:
+    V1
+    int main(){
+        // code
+        return 0;
+    }
+    V2
+    int main(int argc, char *argv[]){
+        // Code
+        return 0;
+    }
+
+# Namespaces
+Names given to parts of code to help reduce naming conflicts
+std is the name for the C++ 'standard' Namespace
+Third-part frameworks will have their own namespaces
+Scope resoultion operator ::
+Example
+    #include <iostream>
+
+    using namespace std;
+
+    int main(){
+        cout << "Enter your favourite number: ";
+    }
+
+# Basic I/O using cin and cout
+cout:
+    standard output stream
+    console
+cin:
+    standard input stream
+    keyboard
+<<:
+    Insertion operator
+    Output streams
+>>:
+    Extraction operator
+    Input streams
+
+# cout and <<
+Insert the data into the cout stream
+    cout << data;
+Can be chained
+    cout << "data 1 is " << data1;
+Does not automatically add line brakes
+    cout << "data 1 is " << data1 << endl;
+    cout << "data 1 is " << data1 << "\n";
+
+# cin and >>
+Extract data from the cin stream based on data's type
+    cin >> data;
+Can be chained
+    cin >> data1 >> data2;
+Can fail if the entered data cannot be interpreted
+data could have an undermined value
+
+# 
+
